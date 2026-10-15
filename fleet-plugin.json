@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "fleet.sandbox",
+  "name": "Fleet Sandbox",
+  "version": "0.1.0",
+  "publisher": "Fleet Official",
+  "license": "MIT",
+  "repository": "https://github.com/TITOCHAN2023/fleet-sandbox-plugin",
+  "runtime": "task",
+  "actions": [
+    "ui",
+    "probe",
+    "config",
+    "configure",
+    "run",
+    "inspect",
+    "diff",
+    "list",
+    "export",
+    "encrypt_storage",
+    "discard"
+  ],
+  "approval_actions": [],
+  "action_specs": {
+    "ui": {"runtime": "task"},
+    "probe": {"runtime": "task"},
+    "config": {"runtime": "task"},
+    "configure": {"runtime": "task"},
+    "run": {"runtime": "task"},
+    "inspect": {"runtime": "task"},
+    "diff": {"runtime": "task"},
+    "list": {"runtime": "task"},
+    "export": {"runtime": "task"},
+    "encrypt_storage": {"runtime": "task"},
+    "discard": {"runtime": "task"}
+  },
+  "ui": {
+    "title": "Fleet Sandbox",
+    "page_action": "ui",
+    "read_actions": ["probe", "config", "inspect", "diff", "list"],
+    "write_actions": ["configure", "run", "export", "encrypt_storage", "discard"]
+  }
+}
